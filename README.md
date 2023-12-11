@@ -2,8 +2,11 @@
 
 
 # Group Members:
-Courtney McGregor - 620146316
-Delroy Robinson - 620148150
-Jahnea Francis - 620155185
-Kelsi Grant - 620148168
-Von Harris - 620147701
+
+Group Project For Group 24: 
+
+1. Courtney McGregor - 620146316
+2. Delroy Robinson - 620148150
+3. Jahnea Francis - 620155185
+4. Kelsi Grant - 620148168
+5. Von Harris - 620147701
