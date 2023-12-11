@@ -25,7 +25,7 @@ window.onload = function() {
         }
         else 
         {
-            alert("User successfully added")
+            document.getElementById("results").innterHTML = "<span> User Added Successfully./span>"
         }
 
     });

@@ -3,9 +3,8 @@ window.onload =  function() {
     let assign_button = document.getElementById("b1");
     let switch_button = document.getElementById("b2");
     let note_button = document.getElementById("b3");
-    let notes_area = document.getElementById("contact-notes");
-    var msgResults = document.getElementById("msg-results");
-    let assingedplace = document.getElementById("four");
+    var msgResults = document.getElementById("msg-results-notes");
+    let assingedplace = document.getElementById("para");
 
  
     
@@ -16,7 +15,7 @@ window.onload =  function() {
 
         if(response.status === 200){
             let data = await response.text();
-            assingedplace.innerHTML ="Assigned To <br>"+ data;
+            assingedplace.innerHTML = data;
         } else {
             alert("There was a problem processing your request.");
         }
@@ -47,7 +46,6 @@ window.onload =  function() {
             if(response.status === 200){
                 let data = await response.text();
                 console.log(data);
-                msgResults.innerHTML = data;
             } else {
                 alert("There was a problem processing your request.");
             }
@@ -61,11 +59,11 @@ window.onload =  function() {
         noteValue = notesText.value;
 
         let response = await fetch(`view_contact.php?noteinfo=${noteValue}`);
-
+        notesText.value = "";
         if(response.status === 200){
             let data = await response.text();
             console.log("cat");
-            notes_area.innerHTML += data;
+            msgResults.innerHTML += data;
         } else {
             alert("There was a problem processing your request.");
         }

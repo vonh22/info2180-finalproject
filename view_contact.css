@@ -1,74 +1,118 @@
+.paddedarea{
+    padding:20px ;
+}
+.save-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    
+}
+
+.save-note-btn{
+  height: 45px;
+  gap: 20px;
+  padding: 10px 20px;
+  width: 12%;
+  cursor: pointer;
+  color: #fdfdfd;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  background-color: #3017d0;
+  
+}
+
+#b2:hover, #b1:hover{
+    transform: translateY(-2px);
+}
+    
+#b1 i ,#b2 i{
+    padding-right: 10px;
+  }
 
 
 .contact-container {
     
-    justify-content: space-between;
-    border: 1px solid #ddd; /* Border color */
-    margin: 10px; /* Margin between containers */
-    padding: 15px; /* Padding within containers */
+    border: 1px solid #dcdde0;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px; 
+    width: 100%;
+   
 }
 
 .notes-container {
-    /*display: flex;*/
-    justify-content: space-between;
-    border: 1px solid #ddd; /* Border color */
-    margin: 10px; /* Margin between containers */
-    padding-left: 15px; 
-    padding-top: 15px; 
-    padding-right: 15px;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdde0;
+    border-radius: 5px;
+    width: 96%;
+    margin: 20px auto;
+  
 }
 
-.notes-details{
-  padding-top: 20px;
+.notes-details {
+  margin: 30px 0px;
 }
 
-.creator{
-    
+#creator{
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.9)
+}
+#Comments{
+    padding: 5px 0px;
+    color:  rgba(0, 0, 0, 0.7);
+}
+
+#created {
+ color:  rgba(0, 0, 0, 0.5);
+
 }
 
 .notes-header{
-    padding: 5px 15px 15px 2px;
-    border-bottom: solid #d4d5d6;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom:15px;
+    font-weight: bold;
+
    }
 .notes-header i {
-   padding-right: 8px;
+   padding-right: 10px;
 }
 
 .contact-details {
-    /*display: flex;*/
-    justify-content: space-between;
-    width: 100%; /* Adjust the width as needed */
-    border: 1px solid #ddd; /* Border color */
-    margin: 10px; /* Margin between containers */
-    padding: 15px; 
-    position:relative;
-    height:150px;
+    margin-top: 15px;
+    padding: 10px 20px 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border: 1px solid #dcdde0;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 96%;
+}
+
+.contact-details #one, #two, #three, #four{
+    font-weight: bold;
+    color: rgba(77, 87, 98, 0.7);
+    margin-top: 25px;
+    
 }
 
 .personal-details {
     display: flex;
-    justify-content: space-between; /* Spread items evenly across the container */
-    /*align-items: flex-end; /* Align items at the end of the flex container */
-    width: 100%; /* Adjust the width as needed */
-    /*border: 1px solid #ddd; /* Border color */
-    margin: 10px; /* Margin between containers */
+    justify-content: space-between;
+    margin: 10px; 
     padding: 15px;
   }
 
-.contact-details p {
-    margin: 5px 0; /* Margin between paragraphs */
-    position:absolute;
-}
+
 
 .personal-details p {
     margin: 5px 0; /* Margin between paragraphs */
 }
 
-#one { top: 10px; left: 10px; }
-#two { top: 10px; right: 44%; }
-#three { bottom: 10px; left: 10px; }
-#four { bottom: 10px; right: 38%; }
 #five{
     font-size: 30px;
     font-weight: bold;
@@ -80,29 +124,67 @@
 }
 
 button{
-    padding:2px;
-    margin: 2px;
-    border-radius: 5px 5px 5px 5px;
+    gap: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #000;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+
 }
 
 #b1{
-    background-color: green;
+    background-color: #41bf70
 }
-#b2{
-    background-color: orange;
+.support-button{
+    background-color: #3017d0;
+    color: #fdfdfd;
 }
 
+.lead-button{
+    background-color: #F7BD23;
+}   
 .div2{
     float:right;
 }
 
 #six, #seven {
-    padding-left: 54px;
+    color: rgba(0,0,0,50%);
+    padding-left: 60px;
+
 }
 
-#div_in .fa-user {
-   padding: 10px;
-    background-color: rgb(208, 208, 208);
+#five .fa-user {
+
+    padding: 13px 15px;
+    background-color: rgba(0,0,0,10%);
     border-radius: 50%;
-    margin-right: 7px;
+    margin-right: 15px;
+
 }
+
+.add-note{
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.add-note-label{
+    font-weight: bold;
+    margin-bottom:10px ;
+}
+
+textarea {
+   
+    padding: 10px;
+    border-radius: 5px;
+    resize: vertical;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+

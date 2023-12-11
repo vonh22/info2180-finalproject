@@ -23,8 +23,8 @@ window.onload = async () => {
                     tableHTML += `
                         <tr>
                             <td class="name">${contact.name}</td>
-                            <td>${contact.email}</td>
-                            <td>${contact.company}</td>
+                            <td class = "email">${contact.email}</td>
+                            <td class = "company">${contact.company}</td>
                             <td><span class="${typeClass}">${contact.type}</span></td>
                             <td><a href="view_contact.php?id=${contact.id}" class="view-link">View</a></td>
                         </tr>

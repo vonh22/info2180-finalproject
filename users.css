@@ -1,46 +1,18 @@
-main .title {
-    font-weight: bold;
-}
 
-.main-header a { 
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #3017d0;
-    color: #F3F3F3;
-    transition: all 0.3s ease-in-out;
-    
-}
-
-.user-container {
-    border: 1px solid #a7a9b3;
-    width: 70%;
+#results {
+    border: 1px solid #dcdde0;
     margin: 0 auto;
     background-color: white;
     padding: 25px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    border-radius: 5px;
 }
-
-.user-container table {
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-}
-
-.user-container-non-admin{
-    border: 1px solid #a7a9b3;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: white;
-    padding: 25px; 
-}
-
 
 table thead{
     background-color: #F3F4F6;
-    height: 50px;   
+    height: 50px; 
+    font-weight: bold;
 }
 
 table tbody tr{
@@ -53,40 +25,54 @@ table tbody tr .name{
 }
 
 .email, .role, .created_at{
-   color: #a7a9b3;
+    color: rgba(0,0,0,50%);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+  
 }
 
-thead {
-    background-color: #f2f2f2;
-}
 
 th, td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+
 }
 
-tr:hover {
-    background-color: lightblue;
+tbody tr:hover {
+    background-color: #d2e7ea;
 }
 
 #flex_div{
-    display:flex;
+    margin: 0 70px;
+    display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    height: 100px;
 }
 
 #add_user{
-    width:100px;
-    height:35px;
-    background-color:blue;
-    border-radius: 10px 10px 10px 10px;
-    color:white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    background-color: #3017d0;
+    color: #fdfdfd;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    flex-direction: row; 
+}
+
+#add_user:hover{
+    background-color: #233043;
+    transform: scale(1.05);
 }
 

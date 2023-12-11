@@ -16,7 +16,7 @@
 .filters{
     display: flex;
     gap: 30px;
-    color: #9d9ea3;
+    color: rgba(0,0,0,50%);
     align-items: center;
 }
 
@@ -80,24 +80,15 @@ table tbody tr{
     height: 40px;
 }
 
-table tbody tr td .name{
+ .name{
     font-weight: bold;
     color: #000;
 }
 
-table tbody tr .email, table tbody tr .company{
-    color: #9d9ea3;
+ .email, .company{
+    color: rgba(0,0,0,50%);
 }
 
-table tbody tr .view{
-    color: #3017d0;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-table tbody tr .view:hover{
-    color: #2c2883;
-}
 
 .btn{
     border: none;
@@ -125,9 +116,11 @@ table tbody tr .view:hover{
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
 .view-link:hover {
+    color: #2c2883;
     text-decoration: underline;
 }
 
@@ -149,4 +142,19 @@ table tbody tr .view:hover{
 
 .type-indicator.support {
     background-color: #3017d0;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+}
+.main-container{
+    border: 1px solid #dcdde0;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    border-radius: 5px;
 }

@@ -56,10 +56,10 @@ if ($role == 'Admin') {
         <?php foreach ($results as $row): ?>
             
             <tr>
-                <td><?= $row['firstname']; ?></td>
-                <td><?= $row['email']; ?></td>
-                <td><?= $row['role']; ?></td>
-                <td><?= $row['created_at']; ?></td>
+                <td class = "name"><?= $row['firstname']; ?></td>
+                <td class = "email"><?= $row['email']; ?></td>
+                <td class = "role"><?= $row['role']; ?></td>
+                <td class = "created_at"><?= $row['created_at']; ?></td>
             </tr>
         <?php endforeach; ?>
         </tbody>
@@ -67,7 +67,7 @@ if ($role == 'Admin') {
 
     <?php
 } else {
-     echo "Member, you lack sufficient privelleges.";
+     echo "Only Admins can view all users.";
     }
 
 

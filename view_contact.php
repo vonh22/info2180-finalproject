@@ -97,15 +97,17 @@ $_SESSION['contact_info'] = $res;
                         
                     <div class="view-email">
             
-                    <p id="one"> Email <br> <?php echo $res['email']?></p>
+                    <p id="one"> Email </p>
+                    <p><?php echo $res['email']?></p>
                 </div>
                 <div class="view-company">
                     
-                    <p id="two"> Company <br>  <?php echo $res['company']?></p>
+                    <p id="two"> Company  </p>
+                    <p> <?php echo $res['company']?></p>
                 </div>
                 <div class="view-telephone">
-                  
-                    <p id="three"> Telephone <br> <?php echo $res['telephone']?></p>
+                    <p id="three"> Telephone </p>
+                    <p><?php echo $res['telephone']?></p>
                     </div>
                 <?php
                         $as_id = $res['assigned_to'];
@@ -119,7 +121,8 @@ $_SESSION['contact_info'] = $res;
                 ?>
                     <div class="view-assigned">
                 
-                    <p id="four">Assigned To <br> <?php echo $assigned_f . " " . $assigned_l;?></p>
+                    <p id="four">Assigned To </p>
+                    <p id = "para"> <?php echo $assigned_f . " " . $assigned_l;?></p>
                 </div>
                     
                     
@@ -129,6 +132,7 @@ $_SESSION['contact_info'] = $res;
                 
                 
                 <div class="notes-container" id="contact-notes">
+                <div class = "paddedarea">
                 <div class="notes-header">
                     <p><i class="fa-regular fa-note-sticky"></i>Notes</p>
                 </div>
@@ -157,21 +161,23 @@ $_SESSION['contact_info'] = $res;
                     <p id="created"><?php echo  date("F j, Y",strtotime($comment['created_at']))?>  at <?php echo date("ga",strtotime($comment['created_at']))?></p>
               
                     </div>
-                    <br>
-                    <br>
+            
                     <?php endforeach;?>
-                
-                </div>
-
-                <div class="add-note">
+                    <div id="msg-results-notes"></div>
+                    </div>
+                    <div class="add-note">
                 <div class="add-note-label">Add a note about <?php echo $contact_fname ?></div>
                 <textarea name="note-text" id="note-text" cols="30" rows="10" placeholder="Enter details here "></textarea>
                 <div class="save-btn-container">
-                    <button type="submit" id="b3" class="save-note-btn">Save</button>
+                    <button type="submit" id="b3" class="save-note-btn">Add Note</button>
                 </div>
             </div>
-            <div id="msg-results"></div>
+            
           </div>
+                
+                </div>
+
+                
             
         </div>
     </main>
@@ -232,11 +238,10 @@ $_SESSION['contact_info'] = $res;
 ?>
 
 <div class="notes-details">
-  <p class="creator"><?php echo $user_fname  . " " . $user_lname ;?></p>
-  <p class="comments"><?php echo $comment_info;?></p>
-  <p class="created"><?php echo date("F j, Y");?> at <?php echo date("ga") ?></p></p>
+  <p id="creator"><?php echo $user_fname  . " " . $user_lname ;?></p>
+  <p id="Comments"><?php echo $comment_info;?></p>
+  <p id="created"><?php echo date("F j, Y");?> at <?php echo date("ga") ?></p></p>
 </div>
-
  
  <?php elseif (isset($_GET['assigntoyou'])):
     $logged_in_user_id = $_SESSION['user_id'];

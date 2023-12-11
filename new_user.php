@@ -25,6 +25,6 @@ $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username_db, $password_db);
 $stmt = $pdo->prepare("INSERT INTO users (firstname, lastname, password, email, role) VALUES (?, ?, ?, ?, ?)");
 $stmt->execute([$first_name, $last_name,$hashedPassword, $email, $role]);
 $pdo = null;
-header('Location: dashboard.html');
+header('Location: users.html');
 ?>
 

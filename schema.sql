@@ -41,4 +41,4 @@ create table notes (
     primary key (id)
 );
 
-insert into users (firstname, lastname, password, email, role) values ("Admin", "Person", "password123", "admin@project2.com", "Admin");
+insert into users (firstname, lastname, password, email, role) values ("Admin", "Person","$2y$10$4dxfYLlJcjSIS8a9Lr3btu7MbvyVFDQDtwHi2Nc1qRFDXuvfch/Z6", "admin@project2.com", "Admin"); /*"password123" already hashed
