@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main&side.css">
+    <link rel="stylesheet" href="new_user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="new_user.js"></script>
+    <title>Dolphin CRM</title>
+</head>
+<body>
+    <header>
+        <i class="fas fa-fish"></i>       
+        <p class="heading">Dolphin CRM</p>
+    </header>
+
+    <main>
+        <div class="mainhead">
+            <h1 class="heading">New User</h1>
+        </div>
+
+        <div class="main-container">
+            <form id="form" action="new_user.php" method="post">
+                <div id="name-div">
+                    <div id="fname-div" class="input-div">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="firstname" id="first-name" placeholder="Jane" required>
+                    </div>
+
+                    <div id="lname-div" class="input-div">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="lastname" id="last-name" placeholder="Doe" required>
+                    </div>
+                </div>
+
+                <div id="auth-div">
+                    <div id="email-div" class="input-div">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="something@example.com" required>                        
+                    </div>
+
+                    <div id="password-div" class="input-div">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required> 
+                    </div>
+                </div>
+
+                <div id="role-div" class="input-div">
+                    <label for="role">Role</label>
+                    <select name="role" id="role" required>
+                        <option value="Member">Member</option>
+                        <option value="Admin">Admin</option>
+                    </select>           
+                </div>
+
+                <div id="result">
+                    
+                </div>
+                    <button type="submit" id="submitbtn" class="btn">Save</button>
+
+            </form>            
+        </div>
+    </main>
+
+    <aside>
+        <div class="aside-container">
+            <ul>
+                <li><i class="fa-solid fa-house"></i><p><a href="dashboard.html">Home</a></p></li>
+                <li><i class="fa-solid fa-user"></i><p><a href="new_contact.html">New Contact</a></p></li>
+                <li><i class="fa-solid fa-users"></i><p><a href="users.html">Users</a></p></li>
+            </ul>
+            <hr>
+            <div class="logout"><i class="fa-solid fa-right-from-bracket"></i><p><a href="logout.php">Logout</a></p></div>
+        </div>
+    </aside>
+
+
+</body>
+</html>

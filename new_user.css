@@ -1,0 +1,70 @@
+.container {    
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+#form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.input-div{
+    gap: 10px;
+  }
+
+ #name-div, #auth-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+ .input-div, #role-div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#fname-div, #lname-div, #email-div, #password-div,select {
+    width: 50%; 
+}
+
+
+input, select {
+    height: 35px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 0.1px solid #929292;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#role {
+    font-family: inherit;
+    font-size: 16px;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #3017d0;
+    color: #F3F3F3;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    margin-left:85%;
+    border-radius: 5px;
+    width: 10%;                              
+}
+
+
+.btn:hover{
+    background-color: #233043;
+    transform: scale(1.05);
+}

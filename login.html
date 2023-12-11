@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="login.js"></script>
+    <title>Dolphin CRM</title>
+</head>
+<body>
+    <header>
+        <i class="fas fa-fish"></i>      
+        <h1 class="heading">Dolphin CRM</h1>
+    </header>
+    <main>
+        
+        <div class="container">
+            <form method="post" id="login">
+                <h2>Login</h2>
+                <label for="email"></label>
+                <input type="email" name="email" id="emailbox" placeholder="Email address" required>
+    
+                <label for="password"></label>
+                <input type="password" name="password" id="passwordbox" placeholder="Password" required>
+
+                
+                <button class="btn" type="submit" name="login" id="loginbtn">
+                    <i class="fa-solid fa-lock"></i>
+                    <p class="btntext">Login</p>
+                </button>
+
+                <div id="result"></div>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <h4>Copyright &copy; 2022 Dolphin CRM</h4>
+    </footer>
+    
+
+</body>
+</html>

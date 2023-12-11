@@ -1,0 +1,108 @@
+
+
+.contact-container {
+    
+    justify-content: space-between;
+    border: 1px solid #ddd; /* Border color */
+    margin: 10px; /* Margin between containers */
+    padding: 15px; /* Padding within containers */
+}
+
+.notes-container {
+    /*display: flex;*/
+    justify-content: space-between;
+    border: 1px solid #ddd; /* Border color */
+    margin: 10px; /* Margin between containers */
+    padding-left: 15px; 
+    padding-top: 15px; 
+    padding-right: 15px;
+
+}
+
+.notes-details{
+  padding-top: 20px;
+}
+
+.creator{
+    
+}
+
+.notes-header{
+    padding: 5px 15px 15px 2px;
+    border-bottom: solid #d4d5d6;
+   }
+.notes-header i {
+   padding-right: 8px;
+}
+
+.contact-details {
+    /*display: flex;*/
+    justify-content: space-between;
+    width: 100%; /* Adjust the width as needed */
+    border: 1px solid #ddd; /* Border color */
+    margin: 10px; /* Margin between containers */
+    padding: 15px; 
+    position:relative;
+    height:150px;
+}
+
+.personal-details {
+    display: flex;
+    justify-content: space-between; /* Spread items evenly across the container */
+    /*align-items: flex-end; /* Align items at the end of the flex container */
+    width: 100%; /* Adjust the width as needed */
+    /*border: 1px solid #ddd; /* Border color */
+    margin: 10px; /* Margin between containers */
+    padding: 15px;
+  }
+
+.contact-details p {
+    margin: 5px 0; /* Margin between paragraphs */
+    position:absolute;
+}
+
+.personal-details p {
+    margin: 5px 0; /* Margin between paragraphs */
+}
+
+#one { top: 10px; left: 10px; }
+#two { top: 10px; right: 44%; }
+#three { bottom: 10px; left: 10px; }
+#four { bottom: 10px; right: 38%; }
+#five{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#div1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+button{
+    padding:2px;
+    margin: 2px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#b1{
+    background-color: green;
+}
+#b2{
+    background-color: orange;
+}
+
+.div2{
+    float:right;
+}
+
+#six, #seven {
+    padding-left: 54px;
+}
+
+#div_in .fa-user {
+   padding: 10px;
+    background-color: rgb(208, 208, 208);
+    border-radius: 50%;
+    margin-right: 7px;
+}
