@@ -1,5 +1,5 @@
 
-#results {
+#resultscontain, #resultscontainmember {
     border: 1px solid #dcdde0;
     margin: 0 auto;
     background-color: white;
@@ -7,6 +7,9 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     border-radius: 5px;
+}
+#resultscontainmember {
+     margin-top:30px;
 }
 
 table thead{

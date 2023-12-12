@@ -42,7 +42,14 @@ if ($role == 'Admin') {
      $stmt = $conn->query("SELECT * FROM users");
      $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
      ?>
-
+<div id="flex_div">
+            <h1>Users</h1>
+            <a href="new_user.html">
+                <button id="add_user"><i class="fa-solid fa-plus"></i> Add User </button>
+            </a>
+            
+        </div>
+        <div id = "resultscontain">
 <table>
         <thead>
         <tr>
@@ -64,14 +71,16 @@ if ($role == 'Admin') {
         <?php endforeach; ?>
         </tbody>
     </table>
-
+        </div>
     <?php
 } else {
-     echo "Only Admins can view all users.";
-    }
-
-
+    
 ?>
+    <div id = "resultscontainmember">
+    <span> Only Admins can view all users and add users</span>
+</div>
+<?php } ?>
+
 
 
 
